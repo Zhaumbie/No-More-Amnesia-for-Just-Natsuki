@@ -111,5 +111,5 @@ You know the deal by now. Bring receipts.
 
 - Team Salvato for Doki Doki Literature Club
 - The Just Natsuki Team for building this crazy thing that submodding for is eating all my goddamn free time
-- My beta testers, willing to repeatedly close and reopen the game like a banging screen door in the name of science
-- **But especially Wowm**, who beta tested the *shit* out of this, everyone say hi Wowm
+- My beta testers (humanbean and others), willing to repeatedly close and reopen the game like a banging screen door in the name of science
+- **And especially Wowm**, who beta tested the *shit* out of this, everyone say hi Wowm
