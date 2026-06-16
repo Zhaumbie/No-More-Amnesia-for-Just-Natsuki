@@ -1,6 +1,10 @@
 # No More Amnesia for Just Natsuki
 
-A fan-made continuity submod for [Just Natsuki](https://github.com/Just-Natsuki-Team/NatsukiModDev), built in Ren'Py 6.99 to give Natsuki better continuity between sessions.
+A fan-made continuity submod for [Just Natsuki](https://github.com/Just-Natsuki-Team/NatsukiModDev), built in Ren'Py 6.99 to give Natsuki better continuity across the entire JN experience. 
+
+No More Amnesia safely expands JN’s persistent memory into a connected history of your relationship with Natsuki. It contenxtualizes how your visits, routines, conversations, affection, and shared experiences unfold across days, months, and beyond, creating a foundation for Natsuki to learn and recognize how both you, and your relationship with her, evolve over time.
+
+Trust a zombie to know how to build a better brain. They'll never let me hear the end of it.
 
 ![No More Amnesia gameplay preview](media/no-more-amnesia.gif)
 
@@ -17,6 +21,34 @@ A fan-made continuity submod for [Just Natsuki](https://github.com/Just-Natsuki-
 ---
 
 ## What Is This?
+**Just Natsuki** already stores a large amount of information about the player and their relationship with Natsuki. Most of that information is stored as isolated facts and lifetime totals; the vanilla code remembers the date you *first* did something, the most *recent* date you did, and the *total number*. That's best-case scenario. This means Natsuki lacks context for *when* nearly anything ever happens. Let's say you've complimented your Natsuki on her confidence 102 times. Was this over months? Did you spam it yesterday? The vanilla code has no idea.
+
+This submod gives your relationship with Natsuki a living continuity. From the day it's installed, she gains a much stronger foundation for learning from the player and recognizing how their relationship develops over time. This is done via ~~*magic*~~ responsibly adding a dedicated continuity record to start connecting those facts together. Rather than dumping isolated events into a persistent soup, it builds a history of the relationship over time. This gives Natsuki, future dialogue, and my upcoming submods a far better foundation for recognizing:
+
+- What the player usually does during a visit
+- How often the player comes to see her
+- Which player habits are becoming more or less frequent
+- How long their visits tend to last
+- Which subjects they return to most often
+- How and when the player expresses affection
+- Changes in the information the player has shared about themselves
+- Important stages in the relationship
+- How the player's routines change across days, months, and seasons
+- Whether a particular visit was ordinary, unusually busy, unusually short, or part of a larger pattern
+- And much, much more
+
+None of these things are tracked by vanilla JN. Now, they can be.
+
+No More Amnesia doesn't replace the existing Just Natsuki persistent file. It adds one self-contained continuity record alongside it, using the information JN already stores as its source of truth, and begins safely and carefully observing persistent changes—*reversibly*. For more information, check the wiki page [All Continuity Features](https://github.com/Zhaumbie/No-More-Amnesia-for-Just-Natsuki/wiki/All-Continuity-Features-(Spoilers)).
+
+...
+
+Oh yeah and it also adds like 1000 lines of dialogue through new custom greetings written to link with the existing optional goodbyes. The rest of this page is mostly about that feature.
+
+---
+
+## Wait What
+
 Upon unlocking AFFECTIONATE affinity with Natsuki, your ability to tell her "goodbye" unlocks 9 optional explanations for her:
 
 - "I'm going to sleep."
@@ -39,13 +71,14 @@ Because seeing Natsuki's face and hearing her reference your last visit **makes 
 
 **No More Amnesia** includes:
 
-- Nearly 800 new lines of dialogue across the AFFECTIONATE, ENAMORED, and LOVE affinity tiers
+- Over 2,000 new lines of dialogue across the AFFECTIONATE, ENAMORED, and LOVE affinity tiers
 - custom greetings connected to ALL optional farewell choices in vanilla Just Nastuki
 - new farewell (with randomized Natsuki dialogue): **"I'm going to be back in a few minutes."**
 - a temporary **"Did you miss me?"** topic if another greeting or event used the automatic greeting slot
 - dialogue variations, depending on how quickly the player returns after saying goodbye
 - compatibility helpers for other submod developers
 - one self-contained `.rpy` file
+- just kidding, now there's a second one to uninstall this mod (see "Uninstallation" below)
 
 That's right! Want to write your own custom Farewell options **and** benefit from this submod? *You can.* There's a **whole submodding guide written into the code** and everything with a fallback generic return plus shortcodes for adding your own custom return greetings! If anybody tells you your ol' pal Zhaumbie ain't never did you nothin' no how, do me a favour and slap 'em with a wet fish
 
@@ -83,12 +116,25 @@ Simple! Use the default "Goodbye." and Natsuki will choose one of the randomized
 
 1. Back up your persistent data first. I am going to keep saying this forever.
 2. Download the latest release.
-3. Copy `zz_no_more_amnesia.rpy` into your Just Natsuki `game/` or `submods/` folder.
+3. Copy `no_more_amnesia.rpy` into your Just Natsuki `submods/` folder.
 4. Launch Just Natsuki.
-5. Open the Goodbye menu.
-6. Choose one of vanilla optional goodbyes (or my new one).
-7. Come back later.
-8. Oh my god, we did it. We did Reddit
+5. It's already working. Ta-da!
+6. But, if you wanted to try the new greetings: open the Goodbye menu.
+7. Choose one of vanilla optional goodbyes (or my new one).
+8. Come back later.
+9. Oh my god, we did it. We did Reddit
+
+## Uninstallation
+
+1. Back up your persistent data first. I am going to keep saying this forever.
+2. Copy `no_more_amnesia_uninstaller.rpy` into your Just Natsuki `submods` folder.
+3. Launch Just Natsuki.
+4. Open the Chat menu.
+5. Navigate to new temporary chat category, "Debug".
+6. Choose "I want to uninstall No More Amnesia".
+7. Listen to Natsuki explain what's happening in-character, then confirm.
+8. After her "Okay but for *real*, real?" spiel, confirm again.
+9. Remove `no_more_amnesia.rpy` and `no_more_amnesia_installer.rpy` from your `submods` folder.
 
 ---
 
