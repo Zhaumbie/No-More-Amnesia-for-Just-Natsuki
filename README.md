@@ -1,4 +1,4 @@
-# No More Amnesia for Just Natsuki
+# No More Amnesia v2 for Just Natsuki
 
 A fan-made continuity submod for [Just Natsuki](https://github.com/Just-Natsuki-Team/NatsukiModDev), built in Ren'Py 6.99 to give Natsuki better continuity across the entire JN experience. 
 
