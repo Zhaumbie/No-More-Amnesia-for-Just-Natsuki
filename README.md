@@ -2,7 +2,7 @@
 
 A fan-made continuity submod for [Just Natsuki](https://github.com/Just-Natsuki-Team/NatsukiModDev), built in Ren'Py 6.99 to give Natsuki better continuity across the entire JN experience. 
 
-No More Amnesia safely expands JN’s persistent memory into a connected history of your relationship with Natsuki. It contenxtualizes how your visits, routines, conversations, affection, and shared experiences unfold across days, months, and beyond, creating a foundation for Natsuki to learn and recognize how both you, and your relationship with her, evolve over time.
+No More Amnesia safely expands JN’s persistent memory into a connected history of your relationship with Natsuki. It contextualizes how your visits, routines, conversations, affection, and shared experiences unfold across days, months, and beyond, creating a foundation for Natsuki to learn and recognize how both you, and your relationship with her, evolve over time.
 
 Trust a zombie to know how to build a better brain. They'll never let me hear the end of it.
 
